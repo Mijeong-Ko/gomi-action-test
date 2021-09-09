@@ -1,4 +1,2 @@
-# /entrypoint.sh
-#!/bin/sh
- 
-echo "Hello World"
+who=${1:-world}
+echo "Hello" $who
