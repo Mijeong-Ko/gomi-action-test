@@ -1,12 +1,16 @@
-name: 'Hello World'               # action 이름
-description: 'Greet someone'      # 간단한 설명
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:                   # id of input    
+  who-to-greet:  # id of input
     description: 'Who to greet'
     required: true
     default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
-  using: 'docker'                 # 도커 사용 명시
-  image: 'Dockerfile'             # Dockerfile을 이용하여 이미지 생성
-  args:                           # docker run 에서 넘길 파라미터
-    - $
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
