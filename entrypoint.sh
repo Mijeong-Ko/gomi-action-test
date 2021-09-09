@@ -1,3 +1,4 @@
-#!/bin/sh -l
-
-ehco "hello world"
+# /entrypoint.sh
+#!/bin/sh
+ 
+echo "Hello World"
