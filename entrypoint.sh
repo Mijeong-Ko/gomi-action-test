@@ -1,4 +1,3 @@
 #!/bin/sh -l
 
-who=${1:-world}
-echo "Hello" $who
+ehco "hello world"
