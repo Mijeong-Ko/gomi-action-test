@@ -1,6 +1,5 @@
-# /action.yml
-name: 'hello world'
-description: 'add actions'
+name: "hello world"
+description: "add actions"
 runs:
   using: 'docker'
   image: Dockerfile
